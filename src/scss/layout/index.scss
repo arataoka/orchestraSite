@@ -1,0 +1,17 @@
+@import '../utility/variable';
+
+.main{
+  position: relative;
+  min-height: 100vh;
+  transition: cubic-bezier(0, 0.06, 0, 1.45) 0.5s;
+  transform-origin: left top;
+  background-color: #fffffe;
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+
+.main.is-open{
+  box-shadow: 20px -8px 14px 3px rgba(0, 0, 0, 0.5);
+  transform: rotate(70deg) translateZ(1000px);
+  transform-origin: left top;
+}

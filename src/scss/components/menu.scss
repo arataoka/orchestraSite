@@ -1,0 +1,9 @@
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu.is-open{
+  transform: translate(100px);
+}

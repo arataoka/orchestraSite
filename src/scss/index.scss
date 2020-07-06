@@ -1,1 +1,13 @@
-@import './modules/sample';
+/* foundation */
+@import './foundation/reset';
+@import './foundation/base';
+
+/* layout */
+@import './layout/index';
+
+/* components */
+@import './components/menu';
+
+/* modules */
+@import './modules/header';
+@import './modules/humberger';

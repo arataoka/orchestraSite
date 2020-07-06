@@ -63,7 +63,7 @@ module.exports = ({ outputFile, assetFile }) => ({
       filename: `${outputFile}.css`,
     }),
     new StyleLintPlugin({
-      configFile: '.stylelintrc.yml',
+      configFile: '.stylelintrc',
     }),
     // new ProvidePlugin({
     //     jQuery: 'jquery',

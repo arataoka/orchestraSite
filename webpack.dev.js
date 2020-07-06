@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 const webpackMerge = require('webpack-merge')
 const commonConf = require('./webpack.common') //共通ファイル
 const outputFile = '[name]'
@@ -15,6 +16,11 @@ module.exports = () =>
         //scriptタグを自動で出力
         template: './src/index.html',
         inject: 'body',
+      }),
+      new StyleLintPlugin({
+        emitErrors: true,
+        quiet: false,
+        syntax: 'scss',
       }),
     ],
   })
