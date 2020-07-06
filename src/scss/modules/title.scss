@@ -1,0 +1,12 @@
+@import '../utility/variable';
+
+.title{
+  font-size: $fs-main;
+  font-weight: bold;
+  display: block;
+
+  &--sub{
+    font-size: $fs-sub;
+    font-weight: normal;
+  }
+}

@@ -1,9 +1,25 @@
+@import '../utility/variable';
+
 .menu{
+  color: $white;
   position: fixed;
   top: 0;
   right: 0;
+  padding: 100px;
+  transition: 2s;
+  transform-style: preserve-3d;
+  perspective: 2000px;
 }
 
-.menu.is-open{
-  transform: translate(100px);
+.menu__list {
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: 1s;
+  transform: translate3d(0, 0, -500px);
+  transform-origin: left;
+
+  .is-open & {
+    opacity: 1;
+    transform: none;
+  }
 }

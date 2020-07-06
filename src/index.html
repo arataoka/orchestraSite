@@ -9,12 +9,21 @@
 </head>
 <body>
 
-<ul class="menu">
-    <li class="menu__list">ああああ</li>
-    <li class="menu__list">いいい</li>
-    <li class="menu__list">ううう</li>
+<ul class="menu js-menu">
+    <li class="menu__list">
+        <span class="title">Main</span>
+        <span class="title title--sub">sub</span>
+    </li>
+    <li class="menu__list">
+        <span class="title">Main</span>
+        <span class="title title--sub">sub</span>
+    </li>
+    <li class="menu__list">
+        <span class="title">Main</span>
+        <span class="title title--sub">sub</span>
+    </li>
 </ul>
-<div class="main js-main">
+<main class="main js-main">
 <header class="header">
     <div class="header__logo">Stay World</div>
     <div class="hamburger js-hamburger">
@@ -29,13 +38,61 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="./images/image-1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/image-2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/image-3.jpg" alt=""></div>
-            ...
+            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-1.jpg" alt=""></div>
+            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-2.jpg" alt=""></div>
+            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-footer">
+            <img class="swiper-footer__image" src="./images/arrow.svg" alt="">
+            <span class="swiper-footer__text">scroll</span>
         </div>
     </div>
 
-</div>
+    <section class="section">
+        <div class="card">
+            <img class="card__image" src="./images/image-3.jpg" alt="">
+            <span class="card__title title"><span class="purple">Travel</span> the world</span>
+            <span class="title title--sub">世界中を旅しよう</span>
+            <p class="card__text">世界１５０ヶ国で<br>利用できる民泊サービスです。<br><br>
+                あなたの望む宿がきっと見つかります。</p>
+            <button class="button">詳しく見る</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="group">
+        <h2 class="title">Find Your House</h2>
+        <p class="title--sub">家を見つけよう</p>
+        <img src="./images/image-1.jpg" alt="">
+        <span>パリ</span>
+        <img src="./images/image-1.jpg" alt="">
+        <span>ニューヨーク</span>
+        <img src="./images/image-1.jpg" alt="">
+        <span>香港</span>
+        <img src="./images/image-1.jpg" alt="">
+        <span>大阪</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="group">
+            <h2 class="title">Find Your House</h2>
+            <p class="title--sub">家を見つけよう</p>
+            <img src="./images/image-1.jpg" alt="">
+            <span>パリ</span>
+            <img src="./images/image-1.jpg" alt="">
+            <span>ニューヨーク</span>
+            <img src="./images/image-1.jpg" alt="">
+            <span>香港</span>
+            <img src="./images/image-1.jpg" alt="">
+            <span>大阪</span>
+        </div>
+    </section>
+
+    <footer>
+        フッター
+    </footer>
+
+</main>
 </body>
 </html>
