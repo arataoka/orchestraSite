@@ -1,15 +1,11 @@
-const withCss = require('@zeit/next-css')
-module.exports = withCss()
-import Swiper from 'swiper'
-// import Swiper styles
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle'
+import swiperOption from './utility/const'
 
 import '@scss/index'
-import 'swiper/swiper-bundle.css'
 import Hamburger from './modules/hamburger'
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('aaa')
   new Hamburger()
-  new Swiper('.swiper-container')
-  console.log('bbb')
+  new Swiper('.swiper-container', swiperOption)
 })

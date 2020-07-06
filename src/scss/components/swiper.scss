@@ -2,6 +2,7 @@
 @import '~swiper/swiper-bundle.css';
 
 .swiper-container {
+  overflow: visible;
   width: 600px;
   height: 300px;
 }
