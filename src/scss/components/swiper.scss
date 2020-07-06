@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import '../utility/variable';
+@import '../utility/animation';
 @import '~swiper/swiper-bundle.css';
 
 .swiper-container {
@@ -11,8 +13,8 @@
 }
 
 .swiper-text{
+  color: $white;
   position: absolute;
-  color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -20,26 +22,37 @@
 
 .swiper-footer{
   position: absolute;
-  left: 50%;
-  bottom: 20px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   z-index: 2;
-  height: 68px;
-  width: 22px;
+  bottom: 20px;
+  left: 50%;
   overflow: hidden;
+  width: 22px;
+  height: 68px;
+  transform: translateX(-50%);
 }
 
 .swiper-footer__image{
+  @include animation($name:arrowUpDown,$iteration-count: infinite);
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 6px;
-}
+  transition: 1s;}
 
 .swiper-footer__text{
-  transform: rotate(90deg);
-  color: white;
-  margin-left: 5px;
+  color: $white;
   display: block;
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
+
+@keyframes arrowUpDown {
+  0%,100% {
+    transform: translateY(-10px);
+  }
+
+  50%{
+    transform: translateY(0);
+  }
+
 }
