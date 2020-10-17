@@ -1,3 +1,5 @@
+@import '../utility/variable';
+
 ul{
   list-style: none;
 }
@@ -5,4 +7,16 @@ ul{
 img{
   display: block;
   width: 100%;
+}
+
+body{
+  font-family: $font-family;
+  line-height: 1.5;
+  color: $white;
+  position: relative;
+}
+
+footer{
+  font-size: 20px;
+  text-align: center;
 }

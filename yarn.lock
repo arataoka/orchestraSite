@@ -3514,6 +3514,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
 
+gsap@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.4.0.tgz#b1cec510b0dd30cbb115fb2bece37a3b86c9327d"
+  integrity sha512-b/GJjLIl9X5bPrlQ6ek7KV6ZPKP2HsKXr7HcuTEQe4725SkCTialLHnrhglxZISIg+zCRrQXawexRUeKZz5CjQ==
+
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
@@ -5294,6 +5299,11 @@ p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
+pace-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/pace-js/-/pace-js-1.0.2.tgz#673a717f833ccb4f4315531b75ee4788376600f7"
+  integrity sha1-Zzpxf4M8y09DFVMbde5HiDdmAPc=
 
 pako@~1.0.5:
   version "1.0.11"

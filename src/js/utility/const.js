@@ -1,9 +1,12 @@
+const effect = window.innerWidth < 600 ? 'coverflow' : 'cube'
+
 const swiperOption = {
-  effect: 'coverflow',
+  effect: effect,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
   loop: true,
+  speed: 1000,
   autoplay: {
     delay: 5000,
   },

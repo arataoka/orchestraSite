@@ -7,12 +7,8 @@ class Hamburger {
     this.humberger.addEventListener('click', this.toggleMenu.bind(this)) //ここでbindをする必要がある！
   }
   toggleMenu() {
-    console.log(this.humberger)
-    console.log(this.main)
-    console.log('ccc')
     this.menu.classList.toggle('is-open')
     this.main.classList.toggle('is-open')
-    this.main.style.position = 'fixed'
     this.humberger.classList.toggle('is-open')
   }
 }

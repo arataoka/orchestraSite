@@ -5,27 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Orchestra</title>
 </head>
 <body>
-
+<div id="global-container">
 <ul class="menu js-menu">
     <li class="menu__list">
-        <span class="title">Main</span>
-        <span class="title title--sub">sub</span>
+        <span class="title">Top</span>
+        <span class="title title--sub">楽団トップ</span>
     </li>
     <li class="menu__list">
-        <span class="title">Main</span>
-        <span class="title title--sub">sub</span>
+        <span class="title">About Us</span>
+        <span class="title title--sub">私たちについて</span>
     </li>
     <li class="menu__list">
-        <span class="title">Main</span>
-        <span class="title title--sub">sub</span>
+        <span class="title">Concert Information</span>
+        <span class="title title--sub">演奏会情報</span>
     </li>
 </ul>
 <main class="main js-main">
 <header class="header">
-    <div class="header__logo">Stay World</div>
+    <div class="header__logo js-text-animation">Orchestra</div>
     <div class="hamburger js-hamburger">
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
@@ -38,61 +40,93 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-1.jpg" alt=""></div>
-            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-2.jpg" alt=""></div>
-            <div class="swiper-slide"><span class="swiper-text">テキスト</span><img src="./images/image-3.jpg" alt=""></div>
+            <div class="swiper-slide"><span class="swiper-text js-appear down">ようこそ、私たちの楽団へ</span><img src="./images/orchestra1.jpeg" alt=""></div>
+            <div class="swiper-slide"><span class="swiper-text js-appear down">RELAXINGな音楽を</span><img src="./images/orchestra4.jpeg" alt=""></div>
+            <div class="swiper-slide"><span class="swiper-text js-appear down">さぁ、聴きに行こう♫</span><img src="./images/orchestra3.jpeg" alt=""></div>
         </div>
         <div class="swiper-footer">
             <img class="swiper-footer__image" src="./images/arrow.svg" alt="">
             <span class="swiper-footer__text">scroll</span>
         </div>
     </div>
-
+<div class="pc flex">
     <section class="section">
-        <div class="card">
-            <img class="card__image" src="./images/image-3.jpg" alt="">
-            <span class="card__title title"><span class="purple">Travel</span> the world</span>
-            <span class="title title--sub">世界中を旅しよう</span>
-            <p class="card__text">世界１５０ヶ国で<br>利用できる民泊サービスです。<br><br>
-                あなたの望む宿がきっと見つかります。</p>
-            <button class="button">詳しく見る</button>
+        <div class="card js-appear down">
+            <img class="card__image" src="./images/orchestra.jpeg" alt="">
+            <span class="card__title title">C.D：Michel Larcen</span>
+            <span class="title title--sub js-text-animation">音楽を愛する全ての方へ</span>
+            <p class="card__text js-text-animation">1993年 音楽大学卒<br>日本フィルハーモニー楽団 専任指揮者</p>
+            <button class="button">詳細プロフィール</button>
         </div>
     </section>
 
     <section class="section">
-        <div class="group">
-        <h2 class="title">Find Your House</h2>
-        <p class="title--sub">家を見つけよう</p>
-        <img src="./images/image-1.jpg" alt="">
-        <span>パリ</span>
-        <img src="./images/image-1.jpg" alt="">
-        <span>ニューヨーク</span>
-        <img src="./images/image-1.jpg" alt="">
-        <span>香港</span>
-        <img src="./images/image-1.jpg" alt="">
-        <span>大阪</span>
+        <div class="card js-appear down">
+            <img class="card__image" src="./images/orchestra9.jpeg" alt="">
+            <span class="card__title title">C.M: David Oran</span>
+            <span class="title title--sub js-text-animation">コンサートマスター</span>
+            <p class="card__text js-text-animation">1993年 音楽大学卒<br>日本フィルハーモニー楽団 バイオリニスト</p>
+            <button class="button">詳細プロフィール</button>
         </div>
     </section>
 
     <section class="section">
+        <div class="card js-appear down">
+            <img class="card__image" src="./images/orchestra11.jpeg" alt="">
+            <span class="card__title title">CL: Lily Franc</span>
+            <span class="title title--sub js-text-animation">楽団長</span>
+            <p class="card__text js-text-animation">1993年 音楽大学卒<br>日本フィルハーモニー楽団 トランペット</p>
+            <button class="button">詳細プロフィール</button>
+        </div>
+    </section>
+</div>
+    <section class="section">
         <div class="group">
-            <h2 class="title">Find Your House</h2>
-            <p class="title--sub">家を見つけよう</p>
-            <img src="./images/image-1.jpg" alt="">
-            <span>パリ</span>
-            <img src="./images/image-1.jpg" alt="">
-            <span>ニューヨーク</span>
-            <img src="./images/image-1.jpg" alt="">
-            <span>香港</span>
-            <img src="./images/image-1.jpg" alt="">
-            <span>大阪</span>
+        <h2 class="title js-text-animation">Comming Concerts</h2>
+        <p class="title title--sub js-text-animation">次のコンサートの情報です</p>
+        <img class="group__image js-appear left" src="./images/orchestra5.jpeg" alt="">
+        <p class="group__info">
+            日程：<span class="js-text-animation">2020/05/04</span>
+            <br>
+            ホール：<span class="js-text-animation">NHKホール</span>
+            <br>
+            曲目：<span class="js-text-animation">A whole new world</span>
+        </p>
+        </div>
+    </section>
+
+    <section class="section pc">
+        <div class="group">
+            <h2 class="title js-text-animation">Past Concerts</h2>
+            <p class="title--sub  js-text-animation">過去の演奏会の情報です</p>
+            <div class="flex">
+            <div class="group__block">
+                <div class="group__cover hover-darken js-slide-image">
+                    <img class="group__image" src="./images/orchestra6.jpeg" alt="">
+                </div>
+                <span class="group__text js-text-animation">パリ演奏会 2018年9月</span>
+            </div>
+            <div class="group__block">
+                <div class="group__cover hover-darken js-slide-image">
+                    <img class="group__image js-slide-image" src="./images/orchestra7.jpeg" alt="">
+                </div>
+                <span class="group__text js-text-animation">ニューヨーク演奏会 2017年1月</span>
+            </div>
+            <div class="group__block">
+                <div class="group__cover hover-darken js-slide-image">
+                    <img class="group__image js-slide-image" src="./images/orchestra8.jpeg" alt="">
+                </div>
+                <span class="group__text js-text-animation">香港演奏会 2016年3月</span>
+            </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        フッター
+        ©︎a.o_orchestra.com
     </footer>
 
 </main>
+</div>
 </body>
 </html>

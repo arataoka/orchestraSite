@@ -1,10 +1,31 @@
+$pattern: (
+  'up': translateY(-20px),
+  'down': translateY(20px),
+  'left': translateX(-40px),
+  'right': translateX(40px)
+);
+
+@each $key, $value in $pattern {
+  .card.#{$key} {
+    transform: $value;
+  }
+}
+
 .card{
+  color: $white;
   position: relative;
   z-index: 0;
   justify-content: space-between;
   margin: 0 15px;
   padding: 15px;
-  background-color: #eaebe6;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #414141;
+
+  &.appear{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .card__image{

@@ -2,14 +2,17 @@
 @import './foundation/reset';
 @import './foundation/base';
 
+/* pace */
+@import './modules/pace';
+
 /* layout */
 @import './layout/index';
 
 /* components */
 @import './components/menu';
 @import './components/card';
+@import './components/group';
 @import './components/swiper';
-
 
 /* modules */
 @import './modules/title';

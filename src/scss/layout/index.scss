@@ -14,13 +14,61 @@ body {
   min-height: 100vh;
   transition: cubic-bezier(0, 0.06, 0, 1.45) 0.5s;
   transform-origin: left top;
-  background-color: #fffffe;
+  background-color: $baseBgColor;
   transform-style: preserve-3d;
   perspective: 300px;
 }
 
 .main.is-open{
+  position: fixed;
   box-shadow: 20px -8px 14px 3px rgba(0, 0, 0, 0.5);
   transform: rotate(70deg) translateZ(1000px);
   transform-origin: left top;
 }
+
+@media ( min-width: 600px ) {
+  .section{
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) .card{
+        transition-delay: $i * 0.1s;
+      }
+    }
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pc{
+    width: 90%;
+    margin: 0 auto;
+
+    & .section{
+      text-align: center;
+      min-height: 100%;
+    }
+
+    & .card{
+      min-height: 100%;
+    }
+
+    & .group__block{
+      width: calc(100% / 3 - 10px);
+    }
+
+    & .title--sub{
+      margin-bottom: 20px;
+    }
+  }
+
+  .card__image{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+

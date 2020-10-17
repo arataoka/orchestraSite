@@ -1,0 +1,27 @@
+@import '~pace-js/themes/white/pace-theme-bounce';
+
+#global-container{
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 2s;
+}
+
+.pace-running #global-container {
+  opacity: 0;
+}
+
+.pace-done #global-container {
+  opacity: 1;
+}
+
+.pace{
+  top: 25%;
+  right: 0;
+  width: 100%;
+}
+
+.pace-activity{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
