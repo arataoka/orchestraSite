@@ -8,7 +8,6 @@ import ScrollObserver from './modules/scrollObserver'
 
 window.addEventListener('DOMContentLoaded', () => {
   const cbText = function (el, isIntersecting) {
-    console.log(el)
     const ta = new TextAnimation(el)
     if (isIntersecting) {
       ta.animate()
@@ -24,10 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const cbAppear = function (el, isIntersecting) {
     if (isIntersecting) {
       el.classList.add('appear')
-      console.log('appear')
     } else {
       el.classList.remove('appear')
-      console.log('disappear')
     }
   }
   new ScrollObserver('.js-text-animation', cbText)

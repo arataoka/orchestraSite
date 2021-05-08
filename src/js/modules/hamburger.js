@@ -1,6 +1,5 @@
 class Hamburger {
   constructor() {
-    console.log('aaaaaa')
     this.humberger = document.querySelector('.js-hamburger')
     this.main = document.querySelector('.js-main')
     this.menu = document.querySelector('.js-menu')
