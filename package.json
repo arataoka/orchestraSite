@@ -24,7 +24,7 @@
     "gsap": "^3.4.0",
     "pace-js": "^1.0.2",
     "regenerator-runtime": "^0.13.5",
-    "swiper": "^6.0.0",
+    "swiper": "^6.5.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   },
